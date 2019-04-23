@@ -561,11 +561,11 @@ class Help_Page(tk.Frame): # new frame called Help Page
             label_6.invisible = not(label_6.invisible)
 
         # Each button has its own text that it displays when pressed
-        help_button1 = tk.Button(self, text="What is Maths Pro?", command=toggle)
+        help_button1 = tk.Button(self, text="What is Pro Maths?", command=toggle)
         help_button1.config(fg="white", bg="blue", height=3)
         help_button1.place(x=150, y=105)
         label_1 = tk.Label(
-            self, text="Maths Pro is a revision app around maths \n that allows for continuous revision on A level Maths"
+            self, text="Pro Maths is a revision app around maths \n that allows for continuous revision on A level Maths"
             ,bg="cyan", font=small_font)
         label_1.invisible = False
 
@@ -594,18 +594,18 @@ class Help_Page(tk.Frame): # new frame called Help Page
         help_button5.config(fg="white", bg="blue", height=3)
         help_button5.place(x=150, y=500)
         label_5 = tk.Label(
-            self, text="Speak to your teacher about questions that you get \n wrong frequently as Maths Pro is about improvement", bg="cyan", font=small_font)
+            self, text="Speak to your teacher about questions that you get \n wrong frequently as Pro Maths is about improvement", bg="cyan", font=small_font)
         label_5.invisible = False
 
         help_button6 = tk.Button(self, text="Further Maths", command=toggle5)
         help_button6.config(fg="white", bg="blue", height=3)
         help_button6.place(x=150, y=600)
         label_6 = tk.Label(
-            self, text="Sadly maths pro doesn't have Further Maths Support this will be a Future update", bg="cyan", font=small_font)
+            self, text="Sadly Pro Maths doesn't have Further Maths Support this will be a Future update", bg="cyan", font=small_font)
         label_6.invisible = False
 
         support_text = (
-            "If you still have problems or which to recommend any updates you can email Maths Pro \n using the button below leave your name if you want follow up help")
+            "If you still have problems or which to recommend any updates you can email Pro Maths \n using the button below leave your name if you want follow up help")
         support_label = tk.Label(self, text=support_text, font=small_font)
         support_label.config(bg="cyan")
         support_label.place(x=700, y=150)
