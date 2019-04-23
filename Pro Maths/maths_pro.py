@@ -158,7 +158,7 @@ class Main_Menu(tk.Frame): # class which is a frame called Pro Maths
         help_button.config(border="0") # the box around the button is removed 
         help_button.place(x=0, y=730) # button placement
         help_button.image = photo
-        # button used to exit maths pro
+        # button used to exit Pro Maths
         quit_button = tk.Button(self, text="Exit", command=lambda: terminate())
         quit_button.config(fg="white", bg="blue", height=3, width=10) # configuration of button
         quit_button.place(x=1200, y=750) # button placement
@@ -580,7 +580,7 @@ class Help_Page(tk.Frame): # new frame called Help Page
         help_button3.config(fg="white", bg="blue", height=3)
         help_button3.place(x=150, y=300)
         label_3 = tk.Label(
-            self, text="Remember you can see upcoming tests so be sure to revise for the test using maths pro", bg="cyan", font=small_font)
+            self, text="Remember you can see upcoming tests so be sure to revise for the test using Pro Maths", bg="cyan", font=small_font)
         label_3.invisible = False
 
         help_button4 = tk.Button(self, text="Teachers information", command=toggle3)
@@ -874,7 +874,7 @@ class StudentandClass(tk.Frame):
         label.config(bg="blue", fg="white")
         label.grid(row=0, column=0)
         # instruction label and text
-        instruct = """Here you can view information about any student that uses Maths Pro they will in the list. Note: with the list you can scroll up and down as well as left and right"""
+        instruct = """Here you can view information about any student that uses Pro Maths they will in the list. Note: with the list you can scroll up and down as well as left and right"""
         instruction = tk.Label(self, text=instruct, wraplength = 700, bg="grey", font=medium_font)
         instruction.place(x=300, y=100) 
 
@@ -1201,7 +1201,7 @@ class MathsInfo(tk.Frame):
         self.name["text"] = None
 
 if __name__ == "__main__":
-    root = ProMaths()  # this runs the Maths Pro class
+    root = ProMaths()  # this runs the Pro Maths class
     combofont = font.Font(family="Helvetica",size=20) # sets up a font for any tkinter widgets
     root.option_add("*TCombobox*Listbox*Font", combofont) # changes the font that the combobox uses
     root.geometry("1280x800+150-50")  # changes the size of the window
